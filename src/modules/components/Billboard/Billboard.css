@@ -1,0 +1,30 @@
+section{
+    background-color: var(--black);
+    padding: 2rem 0;
+}
+.container-films{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.films{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    width: 90vw;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        height: 0.5rem;
+    }
+    &::-webkit-scrollbar-track {
+        background: var(--black);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #3b3939;
+        border-radius: 6px;
+    }
+    
+}
