@@ -1,0 +1,13 @@
+.film__card{
+    
+    & img:hover{
+        box-shadow:  0 0 10px 5px var(--white);
+        cursor: pointer;
+    }
+
+    & img{
+        border-radius: 0.25rem;
+        height: 390px;
+        width: 275px;
+    }
+}
