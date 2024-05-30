@@ -1,6 +1,6 @@
 import React from "react";
 import "./Billboard.css";
-import { FilmCard } from "../FilmCard/FilmCard";
+import { FilmCard } from "../FilmCard/FilmCard.tsx";
 
 
 export const Billboard = () => {
