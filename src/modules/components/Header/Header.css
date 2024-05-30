@@ -1,0 +1,42 @@
+header {
+    align-items: center;
+    background-color: var(--black);
+    border-bottom: 2px solid #2a2a2c;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    
+  }
+  
+  .container-nav {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+    & nav ul {
+      display: flex;
+      font-size: 1.5rem;
+      gap: 2.5rem;
+    }
+  
+    & li:hover {
+      color: orange;
+      border-bottom: 2px solid orange;
+    }
+  }
+  .container-user {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+  
+    & img {
+      width: 1.5rem;
+      height: 1.75rem;
+    }
+    & .user {
+      width: 2.5rem;
+      height: auto;
+    }
+  }
+  
