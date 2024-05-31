@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import './Header.css';
 
 
@@ -15,10 +16,10 @@ export const Header = () =>{
             <nav>
                 <ul>
                     <li>
-                        Home
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        Filmes
+                        <Link to="/">Filmes</Link>
                     </li>
                     <li>
                         Contacto

@@ -1,25 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Billboard.css";
 import { FilmCard } from "../FilmCard/FilmCard.tsx";
+import { films } from "../../../Data/filmsData.ts";
 
+export const Billboard:React.FC = () => {
+  const navigate = useNavigate();
 
-export const Billboard = () => {
-  const filmsList = [
-    { src: "./img/barbie.webp", alt: "Barbie" },
-    { src: "./img/amanecer-movie.webp", alt: "Amanecer" },
-    { src: "./img/crepusculo.webp", alt: "Crepusculo" },
-    { src: "./img/intensamente-movie.webp", alt: "Intensamente" },
-    { src: "./img/up-movie.jpg", alt: "Up" },
-    { src: "./img/garfield.jpg", alt: "Garfield" },
-  ];
+  const handleCardClick = (id: number) => {
+    navigate(`/film/${id}`);
+  };
 
   return (
     <section>
       <div className="container-films">
         <ul className="films">
-          {filmsList.map((film, index) => (
-            <li key={index}>
-                <FilmCard src={film.src} alt={film.alt} />
+          {films.map((film, index) => (
+            <li key={film.id} onClick={() => handleCardClick(film.id)}>
+              <FilmCard src={film.src} alt={film.title} />
             </li>
           ))}
         </ul>
