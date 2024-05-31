@@ -24,6 +24,10 @@ header {
       color: orange;
       border-bottom: 2px solid orange;
     }
+    & a{
+      text-decoration: none;
+      color: var(--white);
+    }
   }
   .container-user {
     align-items: center;
