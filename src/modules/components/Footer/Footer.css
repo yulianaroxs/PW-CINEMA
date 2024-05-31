@@ -1,41 +1,42 @@
 .footer{
-    background-color: var(--black);
+    background-color: #1C1C1C;
     display: flex;
     justify-content: space-around;
     color: var(--white);
+    margin-top: 10rem;
+    padding: 3rem 1rem;
+    font-family: Tahoma;
+    & h4{
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+     }
 
-  
-    & :nth-child(2){
-        width: 30%;
+    & > :nth-child(1){
+        width: 40%;
+        p {
+            width: 100%;
+        }
     }
-    & :nth-child(3){
-        width: 15%;
+    & > :nth-child(2){
+        width: 38%;
+        
+    }
+    & > :nth-child(3){
+        width: 10%;
     }
 
 }
-.quienes-somos {
-    width: 45%;
-    p {
-        width: 100%;
+.contacto-container{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    & a{
+        text-decoration: none;
+        color: var(--white);
     }
-    color: chartreuse;
-}
+    & a:hover{
+        color: var(--orange);
+    }
 
-
-/* 
-.quienes-somos{
-    color: var(--white);
-    
-    margin: 5rem;
 }
-.contacto{
-    color: var(--white);
-    justify-content: left;
-    height: 30%;
-}
-.legales{
-    color: var(--white);
-    justify-content: left;
-    height: 10%;
-    width: 100%;
-} */
