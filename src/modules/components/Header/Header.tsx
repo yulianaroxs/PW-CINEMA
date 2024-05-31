@@ -4,9 +4,6 @@ import './Header.css';
 
 
 export const Header = () =>{
-    const [age, setAge] = useState(28);
-    const [msj, setMsj] = useState('te amo mucho yuliana oxox');
-
 
     return(
         <header>
